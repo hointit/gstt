@@ -1,0 +1,13 @@
+$fa-font-path: "webfonts";
+
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
+$owl-image-path: "img";
+//@import "~owl.carousel/src/scss/owl.carousel";
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
+//@import "../plugins/OwlCarousel2-2.2.1/owl.carousel.css";
+//@import "../plugins/OwlCarousel2-2.2.1/owl.theme.default.css";
+@import "../plugins/OwlCarousel2-2.2.1/animate.css";
