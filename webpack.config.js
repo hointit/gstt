@@ -12,12 +12,12 @@ const config = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    host: '192.168.1.120',
-    compress: true,
-    port: 6969
-  },
+  // devServer: {
+  //   contentBase: path.join(__dirname, 'build'),
+  //   host: '192.168.1.120',
+  //   compress: true,
+  //   port: 6969
+  // },
   module: {
     rules: [
       {
