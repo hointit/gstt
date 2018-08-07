@@ -11,7 +11,6 @@ const config = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    publicPath: '/public/'
   },
   // devServer: {
   //   contentBase: path.join(__dirname, 'public'),
