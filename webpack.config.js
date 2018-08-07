@@ -9,8 +9,9 @@ const VENDOR_LIBS = [
 const config = {
   entry: './src/index.js',
   output: {
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
+    publicPath: '/public/'
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
