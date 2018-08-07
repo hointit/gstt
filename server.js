@@ -1,11 +1,17 @@
-const express = require('express')
 const path = require('path')
-const port = process.env.PORT || 6969
-var app = express()
-app.use(express.static(__dirname))
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'))
-})
-app.listen(port)
-console.log(port)
-console.log ('started')
+const express = require('express')
+
+module.exports = {
+  app: function () {
+    const app = express()
+    const indexPath = path.join(__dirname, 'index.html')
+    const publicPath = express.static(path.join(__dirname, 'public'))
+
+    app.use('/public', publicPath)
+    app.get('/', function (_, res) {
+      res.sendFile(indexPath)
+    })
+
+    return app
+  }
+}
