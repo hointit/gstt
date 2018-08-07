@@ -1,13 +1,6 @@
 import React, {Fragment} from 'react'
 import ReactDOM from 'react-dom'
 
-// image
-import envelope from '../../../images/envelope.svg'
-import smartphone from '../../../images/smartphone.svg'
-import logo from '../../../images/logo.png'
-import placeholder from '../../../images/placeholder.svg'
-
-
 
 class Footer extends React.Component {
   render() {
@@ -64,7 +57,7 @@ class Footer extends React.Component {
 
                     <div className="logo_container">
                       <div className="logo">
-                        <img src={logo} alt="" />
+                        <img src='/images/logo.png' alt="" />
                           <span>course</span>
                       </div>
                     </div>
@@ -113,19 +106,19 @@ class Footer extends React.Component {
                       <ul>
                         <li className="footer_contact_item">
                           <div className="footer_contact_icon">
-                            <img src={placeholder} alt="https://www.flaticon.com/authors/lucy-g" />
+                            <img src='/images/placeholder.svg' alt="https://www.flaticon.com/authors/lucy-g" />
                           </div>
                           Blvd Libertad, 34 m05200 Arévalo
                         </li>
                         <li className="footer_contact_item">
                           <div className="footer_contact_icon">
-                            <img src={smartphone} alt="https://www.flaticon.com/authors/lucy-g" />
+                            <img src='/images/smartphone.svg' alt="https://www.flaticon.com/authors/lucy-g" />
                           </div>
                           0898982832
                         </li>
                         <li className="footer_contact_item">
                           <div className="footer_contact_icon">
-                            <img src={envelope} alt="https://www.flaticon.com/authors/lucy-g" />
+                            <img src='/images/envelope.svg' alt="https://www.flaticon.com/authors/lucy-g" />
                           </div>
                           admin@.gstt.com
                         </li>

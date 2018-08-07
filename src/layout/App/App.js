@@ -4,7 +4,7 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 import Content from '../Content'
 
-
+import '../../images/slider_background.jpg'
 class App extends React.Component {
   constructor(props) {
     super(props)
