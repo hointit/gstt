@@ -78,5 +78,6 @@ typings/
 
 # idea
 .idea/
+public
 
 # End of https://www.gitignore.io/api/node

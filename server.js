@@ -1,15 +1,19 @@
 var webpack = require('webpack')
+const path = require("path")
 var WebpackDevServer = require('webpack-dev-server')
 var config = require('./webpack.config')
+var port = process.env.PORT || 6969
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
+  contentBase: path.join(__dirname, 'public'),
   hot: true,
   inline: true,
-  historyApiFallback: true
-}).listen(3000, '0.0.0.0', function (err, result) {
+  historyApiFallback: true,
+  open: true
+}).listen(port, '0.0.0.0', function (err, result) {
   if (err) {
     console.log(err)
   }
-  console.log('Listening at 0.0.0.0:3000')
+  console.log('server started')
 })
